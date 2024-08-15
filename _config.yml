@@ -132,8 +132,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: my_blog_name # blog_name will be displayed in your blog page
-blog_description: my_blog_description
+blog_name: 『/』 # blog_name will be displayed in your blog page
+blog_description: 闲逛.沉淀.研究.生活
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
