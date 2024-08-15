@@ -23,6 +23,7 @@ group :jekyll_plugins do
     gem 'webrick'
     gem 'observer'
 end
+
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
