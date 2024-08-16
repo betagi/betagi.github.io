@@ -4,7 +4,7 @@
     "label": "Student",
     "image": "",
     "email": "bertreb2002@gmail.com",
-    "website": "https://alshedivat.github.io/al-folio/",
+    "website": "https://betagi.github.io/",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -110,7 +110,7 @@
       "highlights": ["Localized Knowledge Base", "Mechanistic Interpretability"],
       "startDate": "2023-12",
       "endDate": "2024-05",
-      "url": "https://example.com"
+      "url": "https://betagi.github.io/blog/2024/BT_LLM/"
     }
   ]
 }
