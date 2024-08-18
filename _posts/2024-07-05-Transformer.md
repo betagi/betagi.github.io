@@ -46,3 +46,9 @@ citation: true
 
 <h1 style="text-align: center;">1. Attention机制</h1>
 目前几乎所有的NLP任务的主导模型都是Transformer架构<d-cite key="Vaswani17"></d-cite>，其中核心是attention机制<d-cite key="Bahdanau15"></d-cite>。与以往孤立地处理单词不同，attention机制为每个词分配权重，从而让模型捕获长距离依赖关系。可以这样说，attention机制通过权重使模型能够理解语言中的细微差别和歧义。
+
+- **[attention machanism](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html)** d2l.ai
+- https://udlbook.github.io/udlbook/
+- Professor [Hegde](https://chinmayhegde.github.io/teaching/)的课程和**[blog](https://chinmayhegde.github.io/fodl/representation01/)**
+- [transformer explanation](https://towardsdatascience.com/transformers-explained-visually-part-1-overview-of-functionality-95a6dd460452)medium
+- [Coding Attention Mechanisms](https://livebook.manning.com/book/build-a-large-language-model-from-scratch/chapter-3/v-8/)

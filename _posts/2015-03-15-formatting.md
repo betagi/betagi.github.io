@@ -2,7 +2,7 @@
 layout: post
 title: Formatting Styles
 date: 2015-03-15 15:15:15
-description: 一文总结所有格式
+description: 一文总结所有Al-folio格式
 tags: formatting
 categories:
 tabs: true
@@ -916,11 +916,15 @@ By using [Bootstrap Table](https://bootstrap-table.com/) it is possible to creat
 It does also support embedding videos from different sources. Here are some examples:
 
 <div class="row mt-3">
+    {% include video.liquid path="https://www.youtube.com/embed/fE1G84dxM28" class="img-fluid rounded z-depth-1" %}
+</div>
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="https://www.youtube.com/embed/jNQXAC9IVRw" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://youtu.be/fE1G84dxM28" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://www.youtube.com/embed/fE1G84dxM28" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
