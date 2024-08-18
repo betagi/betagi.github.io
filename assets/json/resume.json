@@ -29,8 +29,10 @@
       "studyType": "Bachelor",
       "startDate": "2020-09",
       "endDate": "2024-06",
-      "courses": ["major in Artificial Intelligence",
-      "key courses: Mathematics and Physics, Linear Algebra,Foundation of Robots, Software Design, Quantitative Engineering Design Method"]
+      "courses": [
+        "major in Artificial Intelligence",
+        "key courses: Mathematics and Physics, Linear Algebra,Foundation of Robots, Software Design, Quantitative Engineering Design Method"
+      ]
     }
   ],
 
@@ -41,9 +43,11 @@
       "url": "https://nbtechx.com/",
       "startDate": "2023-10",
       "endDate": "2024-06",
-      "highlights": ["Designed a small-scale innovation center targeting the K12 audience",
-      "conducted industry research in Germany and Switzerland", 
-      "developed hands-on projects with strong practical applicability"]
+      "highlights": [
+        "Designed a small-scale innovation center targeting the K12 audience",
+        "conducted industry research in Germany and Switzerland",
+        "developed hands-on projects with strong practical applicability"
+      ]
     },
     {
       "name": "Chongqing Industrial Innovation Park",
@@ -52,8 +56,9 @@
       "startDate": "2022-11",
       "endDate": "2023-9",
       "highlights": [
-      "Formed a 4-person startup team, conducted interviews and industry research to understand user needs"
-      ,"Focus areas: elderly carrying assistance, post-bathing body drying"]
+        "Formed a 4-person startup team, conducted interviews and industry research to understand user needs",
+        "Focus areas: elderly carrying assistance, post-bathing body drying"
+      ]
     }
   ],
 
@@ -62,21 +67,12 @@
       "name": "Computer Science",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-      "programming",
-      "mathematics",
-      "algorithms and data structures",
-      "AI application"
-      ]
+      "keywords": ["programming", "mathematics", "algorithms and data structures", "AI application"]
     },
     {
-      "name" :"entrepreneurship",
+      "name": "entrepreneurship",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "interviews and industry research",
-        "identify pain points",
-        "product design"
-      ]
+      "keywords": ["interviews and industry research", "identify pain points", "product design"]
     }
   ],
   "languages": [
@@ -95,13 +91,7 @@
     {
       "name": "Large Language Models",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Mechanistic Interpretability",
-        "Multimodal AI",
-        "Generative Models",
-        "LLM Reasoning",
-        "Intelligent Agents"
-      ]
+      "keywords": ["Mechanistic Interpretability", "Multimodal AI", "Generative Models", "LLM Reasoning", "Intelligent Agents"]
     }
   ],
   "projects": [

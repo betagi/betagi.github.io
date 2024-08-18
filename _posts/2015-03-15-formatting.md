@@ -4,7 +4,7 @@ title: Formatting Styles
 date: 2015-03-15 15:15:15
 description: 一文总结所有格式
 tags: formatting
-categories: 
+categories:
 tabs: true
 thumbnail: assets/img/prof_pic_einstein.jpg
 images:
@@ -33,11 +33,13 @@ related_posts: false
 {% details more about `sidebar` %}
 check the [bootstrap-toc](https://afeld.github.io/bootstrap-toc/) documentation. Notice that you can even customize the text of the heading that will be displayed on the sidebar.
 {%enddetails%}
+
 # 1. 文本格式
 
 {% details **tabs**的[语法](https://alshedivat.github.io/al-folio/blog/2024/tabs/)： %}
 
 {% raw %}
+
 ```liquid
 {% tabs 组别名 %}
 {% tab 组别名 组别A %}
@@ -48,12 +50,14 @@ check the [bootstrap-toc](https://afeld.github.io/bootstrap-toc/) documentation.
 {% endtab %}
 {% endtabs %}
 ```
+
 {% endraw %}
 
 {% enddetails %}
 
 {% tabs txt %}
 {% tab txt pseudocode%}
+
 ```pseudocode
 % Ackermann Procedure
 \begin{algorithm}
@@ -65,60 +69,75 @@ check the [bootstrap-toc](https://afeld.github.io/bootstrap-toc/) documentation.
     \ELSIF{$m > 0$ AND $n = 0$}
         \RETURN \CALL{Ackermann}{$m - 1, 1$}
     \ELSE
-        \RETURN \CALL{Ackermann}{$m - 1, $ \CALL{Ackermann}{$m, n - 1$}} 
+        \RETURN \CALL{Ackermann}{$m - 1, $ \CALL{Ackermann}{$m, n - 1$}}
     \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
 \end{algorithm}
 ```
+
 {%endtab%}
 {% tab txt 超链接 %}
+
 ```markdown
 markdown[Pinterest](https://www.pinterest.com)  
-html <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> 
+html <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a>
 ```
+
 {% endtab %}
 {% tab txt todo %}
+
 - [x] Brush Teeth
 - [ ] Put on socks
   - [x] Put on left sock
   - [ ] Put on right sock
-{% endtab %}
-{% tab txt quote %}
-> A quote
+        {% endtab %}
+        {% tab txt quote %}
+    > A quote
+
 ```markdown
 > A quote in markdown block
 ```
+
 {% endtab %}
 {% tab txt list %}
+
 ```markdown
 - brunch
   - fixie
     - raybans
-+ sdf 
-+ sdfsdf
-+ list
-    1. sd 
-    2. sdf 
- 1. sdf 
-a. sdf
+
+* sdf
+* sdfsdf
+* list
+  1. sd
+  2. sdf
+
+1.  sdf
+    a. sdf
 ```
+
 {% endtab %}
 {% tab txt yaml %}
+
 ```yaml
 food:
   - "🥬"
   - "🍉"
 ```
+
 {% endtab %}
 {% tab txt json %}
+
 ```json
 {
   "relationship": ["tiktok", "ByteDance"]
 }
 ```
+
 {% endtab %}
 {% tab txt jupyter %}
+
 ```liquid
 {::nomarkdown}
 {% assign jupyter_path = 'assets/jupyter/blog.ipynb' | relative_url %}
@@ -130,19 +149,23 @@ food:
 {% endif %}
 {:/nomarkdown}
 ```
+
 {% endtab %}
 {% endtabs %}
 
 {% details `tabs`随记：%}
+
 - tabs子标签英文自动大写
 - 使用`endtabs`作为结束标签
 - 每个tab块都有两个属性（组名和标签名）
 - ~~有效的标签名~~
-{% enddetails %}
+  {% enddetails %}
 
 {% details `pseudocode`随记%}
+
 - `pseudocode`会自动编号，如Algorithm 1, Algorithm 2, ...
 - 使用四个反引号（````）来表示代码块是为了嵌套代码块，例：
+
 ````markdown
 ```pseudocode
 % BusyBeaver 函数
@@ -179,47 +202,51 @@ food:
 \end{algorithm}
 ```
 ````
+
 {%enddetails%}
 
 {% details `code`随记：%}
+
 - 在`liquid`tag中代码块显示行数：
-{% highlight c++ linenos %}
-int main(int argc, char const \*argv[])
-{
-string myString;
+  {% highlight c++ linenos %}
+  int main(int argc, char const \*argv[])
+  {
+  string myString;
 
-    cout << "input a string: ";
-    getline(cin, myString);
-    int length = myString.length();
+      cout << "input a string: ";
+      getline(cin, myString);
+      int length = myString.length();
 
-    char charArray = new char * [length];
+      char charArray = new char * [length];
 
-    charArray = myString;
-    for(int i = 0; i < length; ++i){
-        cout << charArray[i] << " ";
-    }
+      charArray = myString;
+      for(int i = 0; i < length; ++i){
+          cout << charArray[i] << " ";
+      }
 
-    return 0;
+      return 0;
 
 }
 {% endhighlight %}
+
 - `_config.yml`中`kramdown.syntax_highlighter_opts.block.line_numbers` 可调整
 - 更详细信息见：[math](https://alshedivat.github.io/al-folio/blog/2015/math/)和[code](https://alshedivat.github.io/al-folio/blog/2015/code/)
-{% enddetails %}
-
-
+  {% enddetails %}
 
 {% details `html`语言 %}
 水平线`<hr>`或者`<hr style="border: none; border-top: 2px solid #ccc; width: 50%;">`
 {% enddetails %}
+
 <hr style="border: none; border-top: 2px solid #ccc; width: 50%;">
 
 # 2.图片
+
 {% details 图片 %}
+
 - `thumbnail`是“封面图”
 - 2/3,1/3的比例[亦可操作](https://alshedivat.github.io/al-folio/projects/1_project/)
 - Adding `data-zoomable` to `<img>` tags so that make images zoomable.
-{% enddetails %}
+  {% enddetails %}
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -245,7 +272,7 @@ string myString;
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/example_img/10.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/example_img/12.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
-## [img-comparison-slider](https://img-comparison-slider.sneas.io/) 
+## [img-comparison-slider](https://img-comparison-slider.sneas.io/)
 
 <img-comparison-slider>
   {% include figure.liquid path="assets/img/prof_pic_color_einstein.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
@@ -258,6 +285,7 @@ string myString;
 
 {% tabs chart %}
 {% tab chart vega_lite%}
+
 ````markdown
 ```vega_lite
 {
@@ -302,8 +330,10 @@ string myString;
 }
 ```
 ````
+
 {%endtab%}
 {% tab chart chartjs(doughnut)%}
+
 ````markdown
 ```chartjs
 {
@@ -338,8 +368,10 @@ string myString;
 }
 ```
 ````
+
 {%endtab%}
 {% tab chart chartjs(line)%}
+
 ````markdown
 ```chartjs
 {
@@ -391,8 +423,10 @@ string myString;
 }
 ```
 ````
+
 {%endtab%}
 {% tab chart typograms%}
+
 ````markdown
 ```typograms
 +----+
@@ -423,8 +457,10 @@ string myString;
 .------------------------.
 ```
 ````
+
 {%endtab%}
 {% tab chart TikZJax%}
+
 ```markdown
 <script type="text/tikz">
   \begin{tikzcd}
@@ -435,8 +471,10 @@ string myString;
   \end{tikzcd}
 </script>
 ```
+
 {%endtab%}
 {% tab chart Mermaid%}
+
 ````markdown
 ```mermaid
 sequenceDiagram
@@ -446,6 +484,7 @@ sequenceDiagram
     John-->>Alice: Great!
 ```
 ````
+
 {%endtab%}
 {%endtabs%}
 
@@ -493,7 +532,9 @@ sequenceDiagram
   }
 }
 ```
+
 another example:
+
 ```vega_lite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -541,6 +582,7 @@ another example:
 ```
 
 This plot supports both light and dark themes.
+
 ## [chart.js](https://www.chartjs.org/) 的[语法](https://alshedivat.github.io/al-folio/blog/2024/chartjs/)
 
 ```chartjs
@@ -716,7 +758,9 @@ Note that this library offer support for both light and dark themes.
 |+----------------------+|
 .------------------------.
 ```
+
 ## [TikZJax](https://tikzjax.com/)的[语法](https://alshedivat.github.io/al-folio/blog/2023/tikzjax/)
+
 <script type="text/tikz">
   \begin{tikzcd}
     A \arrow[r, "\phi"] \arrow[d, red]
@@ -739,6 +783,7 @@ sequenceDiagram
 <hr style="border: none; border-top: 4px solid #333; width: 50%;">
 
 # 4.表格的[语法](https://alshedivat.github.io/al-folio/blog/2023/tables/)
+
 ## Simple Example
 
 First, add the following to the post's front matter
@@ -842,8 +887,8 @@ By using [Bootstrap Table](https://bootstrap-table.com/) it is possible to creat
   </thead>
 </table>
 
-
 # 5. 音视频的[语法](https://alshedivat.github.io/al-folio/blog/2023/videos/)
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include audio.liquid path="assets/audio/epicaly-short-113909.mp3" controls=true %}
@@ -882,17 +927,22 @@ It does also support embedding videos from different sources. Here are some exam
 # 6. 其他特殊格式：
 
 ## jupyter nb的[语法](https://alshedivat.github.io/al-folio/blog/2023/jupyter-notebook/)
+
 【暂略】
 
 ## redirect链接
+
 adding the following to the post’s front matter
+
 ```yaml
 ---
 layout: post
 redirect: /assets/pdf/example_pdf.pdf
 ---
 ```
+
 ## Blockquote的[语法](https://alshedivat.github.io/al-folio/blog/2023/custom-blockquotes/)
+
 This post shows how to add custom styles for blockquotes. Based on [jekyll-gitbook](https://github.com/sighingnow/jekyll-gitbook) implementation.
 
 We decided to support the same custom blockquotes as in [jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html), which are also found in a lot of other sites' styles. The styles definitions can be found on the [\_base.scss](https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss) file, more specifically:
@@ -1098,9 +1148,10 @@ Which generates:
 }
 ```
 
-
 ## code diff [语法](https://alshedivat.github.io/al-folio/blog/2024/code-diff/)
+
 【暂略】
 
 ## twitter[语法](https://alshedivat.github.io/al-folio/blog/2021/diagrams/)
+
 【暂略】

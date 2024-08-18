@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Dream of AI's Dream
-description: 
-category: 
-related_publications: 
+description:
+category:
+related_publications:
 redirect:
 ---
 
